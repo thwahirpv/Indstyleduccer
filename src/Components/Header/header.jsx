@@ -11,7 +11,7 @@ const Header = () => {
 
   const navigations = [
     {option: 'Home', path: '/'},
-    {option: 'Catalogue', path: 'catalogue'},
+    // {option: 'Catalogue', path: 'catalogue'},
     {option: 'Gallery', path: 'gallery'},
     {option: 'Contact', path: '/contact'}
   ]
