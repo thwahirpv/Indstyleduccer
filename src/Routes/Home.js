@@ -13,7 +13,7 @@ const Home = () => {
       <Gallery  title="gallery"
           dark={true}
           id="gallery"/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   )
 }
