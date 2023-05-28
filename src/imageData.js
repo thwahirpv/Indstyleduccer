@@ -1,4 +1,3 @@
-import React from 'react'   
 import cImage1 from './Assets/Images/c-img-1.jpg'
 import cImage2 from './Assets/Images/c-img-2.jpg'
 import cImage3 from './Assets/Images/c-img-3.jpg'
@@ -15,6 +14,12 @@ import cImage13 from './Assets/Images/c-img-13.jpg'
 import cImage14 from './Assets/Images/c-img-14.jpg'
 import cImage15 from './Assets/Images/c-img-15.jpg'
 import cImage16 from './Assets/Images/c-img-16.jpg'
+import cImage17 from './Assets/Images/c-img-19.jpg'
+import cImage18 from './Assets/Images/c-img-20.jpg'
+import cImage19 from './Assets/Images/c-img-21.jpg'
+import cImage20 from './Assets/Images/c-img-22.jpg'
+import cImage21 from './Assets/Images/c-img-23.jpg'
+import cImage22 from './Assets/Images/c-img-24.jpg'
 import cVideo1 from './Assets/Images/c-video-17.mp4'
 import cVideo2 from './Assets/Images/c-video-18.mp4'
 
@@ -129,6 +134,42 @@ const imageData = [
     {
         urlImg: cImage16,
         id: 18,
+        area: 'third',
+        catogary: 'image'
+    },
+    {
+        urlImg: cImage17,
+        id: 19,
+        area: 'third',
+        catogary: 'image'
+    },
+    {
+        urlImg: cImage18,
+        id: 20,
+        area: 'third',
+        catogary: 'image'
+    },
+    {
+        urlImg: cImage19,
+        id: 21,
+        area: 'third',
+        catogary: 'image'
+    },
+    {
+        urlImg: cImage20,
+        id: 22,
+        area: 'third',
+        catogary: 'image'
+    },
+    {
+        urlImg: cImage21,
+        id: 23,
+        area: 'third',
+        catogary: 'image'
+    },
+    {
+        urlImg: cImage22,
+        id: 24,
         area: 'third',
         catogary: 'image'
     },

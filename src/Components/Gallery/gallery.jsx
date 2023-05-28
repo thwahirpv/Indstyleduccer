@@ -99,7 +99,8 @@ const Gallery = () => {
               onClick={ ()=> moreDetailsHandler(image.id)}/>
 
             </div> : 
-             <div style={{backgroundImage: `url(${image.urlImg})`}}
+             <div style={{backgroundImage: `url(${image.urlImg})`,
+             backgroundPosition: 'center',backgroundRepeat: 'no-repeat'}}
              className='bg-cover object-cover w-[18rem] h-[18rem] rounded-md'
              data-aos="fade-up"
             data-aos-duration="600"
@@ -143,7 +144,7 @@ const Gallery = () => {
               onClick={ ()=> moreDetailsHandler(image.id)}/>
 
             </div> : 
-             <div style={{backgroundImage: `url(${image.urlImg})`}}
+             <div style={{backgroundImage: `url(${image.urlImg})`,backgroundPosition: 'center',backgroundRepeat: 'no-repeat'}}
              className='bg-cover object-cover w-[17rem] h-[17rem] rounded-md'
              data-aos="fade-up"
             data-aos-duration="600"

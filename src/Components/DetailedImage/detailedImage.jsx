@@ -11,7 +11,7 @@ const DetailedImage = ({activeId, setDetailViewer}) => {
 
         {
           imageDetails.catogary === 'video' ?  
-            <video src={imageDetails.urlImg} className='bg-cover object-cover w-[25rem] h-[25rem] sm:w-[35rem] sm:h-[35rem] xs:w-[20rem] xs:h-[27rem] rounded-md'
+            <video src={imageDetails.urlImg} className='bg-cover object-cover md:w-[25rem] md:h-[25rem] sm:w-[35rem] sm:h-[35rem] xs:w-[20rem] xs:h-[27rem] rounded-md'
             autoPlay loop controls muted />
           : 
           <div style={{backgroundImage: `url(${imageDetails.urlImg})`}} className='bg-cover object-cover bg-no-repeat md:w-[25rem] md:h-[25rem] sm:w-[30rem] sm:h-[30rem] xs:w-[20rem] xs:h-[27rem] rounded-md'>

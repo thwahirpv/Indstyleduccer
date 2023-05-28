@@ -32,7 +32,7 @@ const Slider = () => {
                 const updatedIndex = currentIndex + 1
                 setCurrentIndex(updatedIndex)
             }
-        return setTimeout(timer)
+            return clearTimeout(timer)
         },4000)
     })
 
