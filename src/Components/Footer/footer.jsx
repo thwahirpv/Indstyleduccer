@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { Link as LinkScroll } from 'react-scroll'
 import { RiWhatsappFill } from 'react-icons/ri'
 import { BsTelephone } from 'react-icons/bs'
+import ReactWhatsapp from 'react-whatsapp'
 
 const Footer = () => {
 
@@ -112,9 +113,9 @@ const Footer = () => {
         </LinkScroll>
 
         <div className='flex space-x-3 md:space-x-5'>
-            <a href='tel:+918086533291' className='bg-[#25D366] py-[.4rem] md:py-[.5rem] px-4 md:px-6 rounded-md cursor-pointer'>
+            <ReactWhatsapp number='+91-8086533291' message='Hello, I need know more Details' className='bg-[#25D366] py-[.4rem] md:py-[.5rem] px-4 md:px-6 rounded-md cursor-pointer'>
               <RiWhatsappFill size={20} className=''/>
-            </a>
+            </ReactWhatsapp>
             <a href='tel:+918086533291' className='bg-[#3BACEC] py-[.4rem] md:py-[.5rem] px-4 md:px-6 rounded-md cursor-pointer'>
               <BsTelephone size={20}/>
             </a>
@@ -125,7 +126,7 @@ const Footer = () => {
         <div className='w-full absolute bottom-[1rem] flex flex-col justify-center items-center'>
            <div className='w-[80%] h-[.1rem] bg-[#112b24]'></div>
 
-           <div className='flex w-[80%] justify-between mt-1'>
+           <div className='flex w-[80%] justify-between mt-[2px]'>
             <div className='flex space-x-2'>
               <p>
                 &copy;

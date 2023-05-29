@@ -10,6 +10,7 @@ import cImg_6 from '../../Assets/curtain-imges/curtian-6.jpg'
 import cImg_7 from '../../Assets/curtain-imges/curtian-7.jpg'
 import cImg_8 from '../../Assets/curtain-imges/curtian-8.jpg'
 import { Link } from 'react-router-dom'
+import { Link as Linkemail } from '@react-email/link'
 import { SiHomebridge } from 'react-icons/si'
 import { GrMail } from 'react-icons/gr'
 import { AiFillPhone } from 'react-icons/ai'
@@ -111,7 +112,7 @@ const Contact = () => {
 
               <textarea name="message" id="message" cols="30" rows="7" placeholder='Message.....' 
               className='block w-[20rem] md:w-[30rem] rounded-md px-2 py-[.4rem] outline-none text-black font-[600] text-md'></textarea>
-              <input type="submit" value="Send"  className='w-full py-2 bg-[#f2f3ef] rounded-md font-[800] text-lg text-[#112b24] cursor-pointer'/>
+              <input type="submit" value="Send"  className='w-full py-2 bg-[#f2f3ef] rounded-md font-[800] text-lg text-[#112b24] cursor-pointer active:bg-[#dbdcd6] active:scale-x-[98%]'/>
             </form>
 
             {
@@ -137,7 +138,7 @@ const Contact = () => {
             <div className='flex flex-col justify-center items-center text-center space-y-1'>
             <h1 className='font-bold text-2xl text-[#f2f3ef] mb-1'>Email Us :</h1>
             <p className='text-[#f2f3ef] text-md'>Email us for general queries, including your<br/> selections and opinions</p>
-            <a href='https://mail.google.com/mail/u/0/#inbox?compose=gzwVKfZpmQKrbxQTPZPtHkTNzXrVPtbcBBTMfHQLsSTGhCZPKRZNLPxcXsZxvrL' className='text-blue-700 font-bold text-md '>rahoofm@gmail.com</a>
+            <Linkemail href='https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwQZrjqLbKbfrTQgqBVJhcHFfFLHjDFNpwvZLtLkqdxJXxvWqGHDCkHVtwJCpwNfLvJbQKr' className='text-blue-700 font-bold text-md '>instyleduccer@gmail.com</Linkemail>
             </div>
           </div>
           {/* ==============Email============ */}
