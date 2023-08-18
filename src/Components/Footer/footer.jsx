@@ -127,16 +127,19 @@ const Footer = () => {
         </div>
 
         <div className='w-full absolute bottom-[1rem] flex flex-col justify-center items-center'>
-           <div className='w-[80%] h-[.1rem] bg-[#112b24]'></div>
+           <div className='w-[80%] h-[.1rem] bg-[#112b24] mt-[9px]'></div>
 
-           <div className='flex w-[80%] justify-between mt-[2px]'>
+           <div className='flex w-[80%] justify-between mt-[7px] items-center'>
             <div className='flex space-x-2'>
               <p>
                 &copy;
               </p>
-            <p className=''>
-              2023 MT Design
+            <p className='flex'>
+              2023
             </p>
+            <ReactWhatsapp number='+91-9895779351' message='Hello, I need Website' className='bg-[#25D366] py-[.2rem] md:py-[.2rem] px-4 md:px-6 rounded-md cursor-pointer font-semibold'>
+                MT-Designs
+            </ReactWhatsapp>
             </div>
 
            <div>
