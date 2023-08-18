@@ -121,6 +121,9 @@ const Footer = () => {
             </a>
         </div>
 
+        <div className='flex space-y-5 md:space-y-5 flex justify-center items-center'>
+          <p className='text-center text-[#112b24] text-md font-semibold'> Kerala, Kannur, Kuthuparamba, Mouweri</p>
+        </div>
         </div>
 
         <div className='w-full absolute bottom-[1rem] flex flex-col justify-center items-center'>
