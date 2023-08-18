@@ -5,9 +5,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from 'react'
 import Contact from './Components/Contact/contact'
-import Casual from './Components/CataloguePages/casual';
-import Bamboo from './Components/CataloguePages/bamboo';
-import Livingroom from './Components/CataloguePages/livingroom';
+import RomanBlinds from './Components/CataloguePages/romanBlinds';
+import FullLength from './Components/CataloguePages/fullLength';
+import ZeebraBlinds from './Components/CataloguePages/zeebraBlinds';
+import HeadRest from './Components/CataloguePages/headRest';
+import FrimeWork from './Components/CataloguePages/frimeWork';
+import Sofa from './Components/CataloguePages/sofa';
 
 function App() {
 
@@ -22,9 +25,12 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/contact' element={<Contact/>}/>
-        <Route path='/casual' element={<Casual/>}/>
-        <Route path='/bamboo' element={<Bamboo/>}/>
-        <Route path='/livingroom' element={<Livingroom/>}/>
+        <Route path='/romanBlinds' element={<RomanBlinds/>}/>
+        <Route path='/fullLength' element={<FullLength/>}/>
+        <Route path='/zeebraBlinds' element={<ZeebraBlinds/>}/>
+        <Route path='/headRest' element={<HeadRest/>}/>
+        <Route path='/frimeWork' element={<FrimeWork/>}/>
+        <Route path='/sofa' element={<Sofa/>}/>
       </Routes>
       </BrowserRouter>
     

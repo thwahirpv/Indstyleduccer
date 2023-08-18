@@ -1,5 +1,5 @@
 import React from 'react'
-import imageData from '../../imageData'
+import imageData from '../../Components/CataloguePages/cataApi'
 import { useState, useEffect } from 'react'
 import DetailedImage from '../DetailedImage/detailedImage'
 
@@ -95,18 +95,18 @@ const Gallery = () => {
             data-aos-delay="100"
             >
 
-              <video src={image.urlImg} className='w-full h-full object-cover rounded-md' autoPlay ioop muted  
+              <video src={image.imgUrl} className='w-full h-full object-cover rounded-md' autoPlay ioop muted  
               onClick={ ()=> moreDetailsHandler(image.id)}/>
 
-            </div> : 
-             <div style={{backgroundImage: `url(${image.urlImg})`,
+            </div> : image.catogary === 'image' ?
+             <div style={{backgroundImage: `url(${image.imgUrl})`,
              backgroundPosition: 'center',backgroundRepeat: 'no-repeat'}}
              className='bg-cover object-cover w-[18rem] h-[18rem] rounded-md'
              data-aos="fade-up"
             data-aos-duration="600"
             data-aos-delay="100"
             data-aos-easing="ease-in"
-            onClick={ ()=> moreDetailsHandler(image.id)}></div>
+            onClick={ ()=> moreDetailsHandler(image.id)}></div> : null
               ))
           }
         </div>
@@ -140,17 +140,17 @@ const Gallery = () => {
             data-aos-delay="100"
             >
 
-              <video src={image.urlImg} className='w-full h-full object-cover rounded-md' autoPlay ioop muted  
+              <video src={image.imgUrl} className='w-full h-full object-cover rounded-md' autoPlay ioop muted  
               onClick={ ()=> moreDetailsHandler(image.id)}/>
 
-            </div> : 
-             <div style={{backgroundImage: `url(${image.urlImg})`,backgroundPosition: 'center',backgroundRepeat: 'no-repeat'}}
+            </div> : image.catogary === 'image' ?
+             <div style={{backgroundImage: `url(${image.imgUrl})`,backgroundPosition: 'center',backgroundRepeat: 'no-repeat'}}
              className='bg-cover object-cover w-[17rem] h-[17rem] rounded-md'
              data-aos="fade-up"
             data-aos-duration="600"
             data-aos-delay="100"
             data-aos-easing="ease-in"
-            onClick={ ()=> moreDetailsHandler(image.id)}></div>
+            onClick={ ()=> moreDetailsHandler(image.id)}></div> : null
               ))
           }
         </div>
