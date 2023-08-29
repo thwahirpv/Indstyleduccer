@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom'
 import { Link as LinkScroll } from 'react-scroll'
 import { RiWhatsappFill } from 'react-icons/ri'
 import { BsTelephone } from 'react-icons/bs'
+import { FaWhatsappSquare } from 'react-icons/fa'
+import { IoCall } from 'react-icons/io5'
+import { FaInstagramSquare } from 'react-icons/fa'
 import ReactWhatsapp from 'react-whatsapp'
 
 const Footer = () => {
@@ -16,10 +19,10 @@ const Footer = () => {
     
   return (
 
-    <div className='w-full bg-[#f2f3ef] mt-[7rem] flex justify-center items-center py-16 md:px-10 px-4 relative'>
+    <div className='w-full bg-[#f2f3ef] mt-[7rem] flex justify-center items-center py-[9rem] md:px-10 px-4 relative'>
         <div className='w-[60%] flex justify-between items-center'>
 
-          <div className='flex justify-between items-start space-x-4 md:space-x-14 w-fit'>
+          <div className='flex justify-between items-start space-x-4 md:space-x-14 w-fit mb-[4rem]'>
             {/* ==========Links============= */}
             <div className='flex flex-col justify-center items-start space-y-5'>
               <h2 className='font-bold text-[17px] md:text-[1.6rem] text-[#112b24]  hover:text-green-900 transition-all duration-200 ease-in cursor-pointer'>Links</h2>
@@ -101,7 +104,7 @@ const Footer = () => {
 
         </div>
 
-        <div className='flex flex-col justify-center items-center space-y-3'>
+        <div className='flex flex-col justify-center items-center space-y-3 mb-[4rem]'>
         <LinkScroll className='font-extrabold text-[15px] md:text-[2rem] text-[#112b24] cursor-pointer'
         activeClass="active"
         to="slider"
@@ -112,7 +115,7 @@ const Footer = () => {
           In sTyle Duccer
         </LinkScroll>
 
-        <div className='flex space-x-3 md:space-x-5'>
+        <div className='flex space-x-3 md:space-x-5 '>
             <ReactWhatsapp number='+91-8086533291' message='Hello, I need know more Details' className='bg-[#25D366] py-[.4rem] md:py-[.5rem] px-4 md:px-6 rounded-md cursor-pointer'>
               <RiWhatsappFill size={20} className=''/>
             </ReactWhatsapp>
@@ -127,9 +130,9 @@ const Footer = () => {
         </div>
 
         <div className='w-full absolute bottom-[1rem] flex flex-col justify-center items-center'>
-           <div className='w-[80%] h-[.1rem] bg-[#112b24] mt-[9px]'></div>
+           <div className='w-[80%] h-[.1rem] bg-[#112b24] '></div>
 
-           <div className='flex w-[80%] justify-between mt-[7px] items-center'>
+           <div className='flex w-[80%] justify-between mt-[7px] items-center mt-[2rem]'>
             <div className='flex space-x-2'>
               <p>
                 &copy;
@@ -137,9 +140,6 @@ const Footer = () => {
             <p className='flex'>
               2023
             </p>
-            <ReactWhatsapp number='+91-9895779351' message='Hello, I need Website' className='bg-[#25D366] py-[.2rem] md:py-[.2rem] px-4 md:px-6 rounded-md cursor-pointer font-semibold'>
-                MT-Designs
-            </ReactWhatsapp>
             </div>
 
            <div>
@@ -148,10 +148,31 @@ const Footer = () => {
             
 
            </div>
+
+            <div className='flex flex-col space-x-3 items-center justify-center mt-[2rem]'>
+                
+                <div className='block'>
+                  <p className='font-bold-900 text-[#112b24]'>Designed By</p>
+                </div>
+                <div className='flex space-x-2 mt-[.6rem]'>
+                <p className='font-extrabold text-[#112b24]'>MT-Designs</p>
+                 <a href='tel:+918086533291' className='bg-[#4285F4] py-1 px-1 rounded-full cursor-pointer flex justify-center items-center'>
+                   <IoCall size={20}/>
+                 </a>
+                <ReactWhatsapp number='+91-9895779351' message='Hello, I need Website' className='bg-[#25D366] px-1 py-1 rounded-full cursor-pointer font-semibold flex justify-center items-cente'>
+                <FaWhatsappSquare size={20} className=''/>
+                </ReactWhatsapp>
+
+                <a href='https://www.instagram.com/_thwahirpv_/' className='bg-[#a45999] py-1 px-1 rounded-full cursor-pointer flex justify-center items-center'>
+                   <FaInstagramSquare size={20}/>
+                 </a>
+                </div>
+                
+            </div>
            
         </div>
+        </div>
 
-    </div>
 
 
     
