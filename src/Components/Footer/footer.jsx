@@ -156,7 +156,7 @@ const Footer = () => {
                 </div>
                 <div className='flex space-x-2 mt-[.6rem]'>
                 <p className='font-extrabold text-[#112b24]'>MT-Designs</p>
-                 <a href='tel:+918086533291' className='bg-[#4285F4] py-1 px-1 rounded-full cursor-pointer flex justify-center items-center'>
+                 <a href='tel:+919895779351' className='bg-[#4285F4] py-1 px-1 rounded-full cursor-pointer flex justify-center items-center'>
                    <IoCall size={20}/>
                  </a>
                 <ReactWhatsapp number='+91-9895779351' message='Hello, I need Website' className='bg-[#25D366] px-1 py-1 rounded-full cursor-pointer font-semibold flex justify-center items-cente'>
